@@ -21,8 +21,8 @@ class Item {
   producto
   cantidad;
 
-    constructor(producto, cantidad) {
-        this.producto = producto;
+    constructor(articulo, cantidad) {
+        this.articulo = articulo;
         this.cantidad = cantidad;
     }
 }

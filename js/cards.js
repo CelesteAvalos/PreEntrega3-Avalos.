@@ -12,7 +12,10 @@ const tabla = document.getElementById('items');
 
 const total = document.getElementById('total');
 
-console.log (cardInfo);
+const selectProductos = document.getElementById('productos')
+const btnAgregar = document.getElementById('agregar');
+
+
 
 let carrito = [];
 let stock = [];
@@ -30,6 +33,8 @@ function traerItems() {
 
     stock = JSON.parse(localStorage.getItem('stock')) || [];
     carrito = JSON.parse(localStorage.getitem('carrito')) || [];
+
+    contenedoresCards();
 }
 
 function contenedoresCards()  {
